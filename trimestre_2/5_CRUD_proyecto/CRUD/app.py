@@ -5,7 +5,9 @@ cursor = conexion.cursor()
 #MENÚ PRINCIPAL
 def menu():
     while True:
+        print('')
         print('----Sistema CRUD base de datos de Postulante y Empresa----')
+        print('')
         print('1. Manipular DB postulantes')
         print('2. Manipular DB empresas')
         print('3. Salir')
@@ -16,6 +18,9 @@ def menu():
 
             while True:
                 print("\n--- CRUD postulantes ---")
+                print('')
+                printURL('http://127.0.0.1:5500/CRUD/tablasPostulantes.html', 'Diccionario de IDs de los postulantes')
+                print('')
                 print("1. Mostrar datos postulantes")
                 print("2. Agregar nuevo postulante")
                 print("3. Actualizar datos de un postulante")
@@ -84,6 +89,9 @@ def menu():
         if opcion == '2':
             while True:
                 print("\n--- CRUD Empresas ---")
+                print('')
+                printURL('http://127.0.0.1:5500/CRUD/tablasEmpresas.html', 'Diccioario de IDs de las empresas')
+                print('')
                 print("1. Mostrar datos de empresas")
                 print("2. Agregar datos de empresa")
                 print("3. Actualizar datos de una empresa")
