@@ -1,4 +1,4 @@
-from functions import showPostulantes, createPostulante, updateData, deletePostulante, showEmpresa, createEmpresa, updateEmpresa, deleteEmpresa, printURL
+from functions import *
 from connection import conexion
 cursor = conexion.cursor()
 
